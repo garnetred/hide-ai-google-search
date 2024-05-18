@@ -1,0 +1,1 @@
+# hide-ai-google-search
