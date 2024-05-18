@@ -27,8 +27,9 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://www.google.com/search"],
-      "css": ["css/global.css"]
+      "matches": ["*://www.google.com/*"],
+      "css": ["css/global.css"],
+      "run_at": "document_start"
     }
   ],
   "host_permissions": ["*://www.google.com/search"],

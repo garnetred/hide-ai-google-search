@@ -3,7 +3,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   if (
     (changeInfo.status === 'complete' &&
       tabUrl &&
-      tabUrl.includes('google.com/search'))
+      tabUrl.includes('google.com/search?'))
   ) {
     try {
       await chrome.scripting.insertCSS({
