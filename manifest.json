@@ -28,7 +28,7 @@
       "run_at": "document_start"
     }
   ],
-  "host_permissions": ["*://www.google.com/search"],
+  "host_permissions": ["*://www.google.com/*"],
   "action": {
     "default_popup": "popup.html"
   }
