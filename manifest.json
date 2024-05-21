@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Hide AI Google Search",
+  "version": "0.0.1",
+  "description": "Remove generative AI from Google Search results.",
+  "permissions": ["scripting"],
+  "icons": {
+    "16": "images/magnifying-glass-emoji-16.png",
+    "32": "images/magnifying-glass-emoji-32.png",
+    "48": "images/magnifying-glass-emoji-48.png",
+    "128": "images/magnifying-glass-emoji-128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{09b1378f-0170-4b90-b108-7e774d154c9f}"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["css/*.css"],
+      "matches": ["*://www.google.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/*"],
+      "css": ["css/global.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": ["*://www.google.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
