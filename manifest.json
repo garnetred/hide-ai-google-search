@@ -10,10 +10,6 @@
     "48": "images/magnifying-glass-emoji-48.png",
     "128": "images/magnifying-glass-emoji-128.png"
   },
-  "background": {
-    "service_worker": "scripts/background.js",
-    "scripts": ["scripts/background.js"]
-  },
   "browser_specific_settings": {
     "gecko": {
       "id": "{09b1378f-0170-4b90-b108-7e774d154c9f}"
